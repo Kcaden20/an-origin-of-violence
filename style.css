@@ -1,0 +1,197 @@
+body {
+    background-color: #1D771D;
+    color: floralwhite;
+    font-size: 2rem;
+    font-family: "Libre Baskerville", serif;
+}
+
+/* Elements */
+h1, h2, h3, h4, h5 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    color: wheat;
+}
+img {
+    box-shadow: 1px 1px 10px red;
+}
+
+.flower {
+    display: table;
+    margin: 0 auto
+}
+
+.flower img {
+    box-shadow: none;
+    display: inline-block;
+    width: 72px;
+    
+}
+
+
+p {text-align: left}
+
+section p {
+    margin: 2em 0;
+}
+a {color: gold;}
+
+audio {
+    display: inherit;
+    margin: 0 auto;
+}
+hr {
+    border-top: 1px solid #B7F0F0;
+    border-bottom: 1px solid red;
+}
+
+i {
+    color:  wheat;
+}
+
+section {padding: 2em;}
+
+/* Classes */
+
+.title {
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.title h1 i {
+    color: gold;
+}
+
+.title img {
+    box-shadow: none;;
+}
+.title p {
+    color: #B7F0F0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.title article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title p:nth-of-type(3) {
+    font-size: 1rem;
+    color:wheat;
+}
+
+.hover-imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .log {
+    padding-top: 2em;
+  }
+
+.hover-imgs article {
+    justify-self: center;
+}
+
+.hover-imgs article p {
+    text-align: center;
+}
+.hover-imgs img {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline;
+    margin: 0 auto;
+}
+
+.hover-imgs article:nth-child(5) {
+    display: none;
+}
+
+.hover-img {
+    max-width: 40vw;
+    max-height: 40vw;
+}
+
+.hover-imgs p {
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    html {
+        overflow-x: hidden !important;   
+    }
+    body {
+    position: relative;
+    font-size: 1rem;
+    margin: 0;
+    }
+
+    .flower img {
+        width: 48px;
+    }
+
+    section {
+        padding: 1em .5em;
+    }
+
+    .hover-imgs {
+        display: grid;
+        justify-content: center;
+        grid-gap: 1rem;
+    }
+
+    .hover-imgs img {
+        display: block;
+    }
+
+      .hover-img article {
+        justify-self: center;
+      }
+
+      hr{ 
+        width: 90%;
+      }
+
+    h1 {
+        font-size: 2rem;
+    }
+    h2, h3, h4, h5 {
+        font-size: 1.5rem;
+    }
+
+
+.title {
+    height: inherit;
+    text-align: center;
+    position: relative;
+}
+
+.title p {
+    color: #B7F0F0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.title article {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+
+.title p:nth-of-type(3) {
+    font-size: .75rem;
+    color:wheat;
+}
+    
+  }
