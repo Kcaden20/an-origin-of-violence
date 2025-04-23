@@ -101,6 +101,7 @@ section {padding: 2em;}
 
 .hover-imgs article {
     justify-self: center;
+    justify-items: center;
 }
 
 .hover-imgs article p {
